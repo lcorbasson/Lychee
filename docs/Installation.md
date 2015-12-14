@@ -5,6 +5,12 @@ The following PHP extensions must be activated:
 
 	exif, gd, json, mbstring, mysqli, zip
 	
+On a Debian or Ubuntu system with Apache HTTP Server, this means that you could run
+
+	apt-get install php5 libapache2-mod-php5 php5-gd php5-json php5-mysql mysql-server 
+
+to install all dependencies.
+
 To use Lychee without restrictions, we recommend to increase the values of the following properties in `php.ini`:
 
 	max_execution_time = 200
@@ -25,7 +31,7 @@ You can also use the [direct download](https://github.com/electerious/Lychee/arc
 
 ### 3. Permissions
 
-Change the permissions of `uploads/`, `data/` and all their subfolders. Sufficient read/write privileges are reqiured.
+Change the permissions of `uploads/`, `data/` and all their subfolders. Sufficient read/write privileges are required.
 
 	chmod -R 777 uploads/ data/
 
